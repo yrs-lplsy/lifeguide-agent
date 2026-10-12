@@ -33,9 +33,13 @@ class Embedder:
         self._cache_file = self.cache_dir / f"{self.model_name.replace('/', '_')}.jsonl"
         if self._cache_file.exists():
             for line in self._cache_file.read_text(encoding="utf-8").splitlines():
-                if line:
+                if not line:
+                    continue
+                try:
                     rec = json.loads(line)
                     self._cache[rec["k"]] = (rec["d"], {int(i): w for i, w in rec["s"].items()})
+                except (json.JSONDecodeError, KeyError, ValueError, TypeError):
+                    continue  # 单行损坏/截断仅跳过，避免全量构建被一行打断（重建即补）
 
     def _save_cache(self, key: str, value: tuple[list[float], dict[int, float]]):
         with open(self._cache_file, "a", encoding="utf-8") as f:
