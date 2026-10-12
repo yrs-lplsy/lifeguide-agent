@@ -189,7 +189,7 @@
 {"qid": "g189", "query": "怎么注册自媒体账号涨粉", "relevant": [], "qtype": "zero_hit", "source_entries": []}
 {"qid": "g190", "query": "健身房私教课值不值得买", "relevant": [], "qtype": "zero_hit", "source_entries": []}
 {"qid": "g191", "query": "看什么书提升情商", "relevant": [], "qtype": "zero_hit", "source_entries": []}
-{"qid": "g192", "query": "无人机在哪里能飞", "relevant": [], "qtype": "zero_hit", "source_entries": []}
+{"qid": "g192", "query": "无人机在哪里能飞", "relevant": ["9-11"], "qtype": "colloquial", "source_entries": ["9-11"]}
 {"qid": "g193", "query": "怎么办理港澳通行证旅游签注", "relevant": [], "qtype": "zero_hit", "source_entries": []}
 {"qid": "g194", "query": "WiFi 路由器怎么摆放信号好", "relevant": [], "qtype": "zero_hit", "source_entries": []}
 {"qid": "g195", "query": "二手车过户流程", "relevant": [], "qtype": "zero_hit", "source_entries": []}

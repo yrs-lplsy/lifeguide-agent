@@ -13,6 +13,7 @@ def test_stratified_covers_all_sections():
     assert len(picked) == 34  # 34 章 × 1 条 < 70 上限
 
 def test_zero_hit_and_pairs_defined():
-    assert len(ZERO_HIT_QUERIES) == 20
+    # 2026-10-12 复审：g192「无人机在哪里能飞」可由书 9-11 回答，重分类为 colloquial，剩 19 条
+    assert len(ZERO_HIT_QUERIES) == 19
     assert all(len(pair) == 2 and pair[0] != pair[1] for pair in MULTI_HOP_PAIRS)
     assert len(MULTI_HOP_PAIRS) >= 20

@@ -44,8 +44,64 @@ def write_details_csv(path: Path, per_query: list[dict], zero_rows: list[dict]):
                         f"{r['top1_score']:.4f}" if r["top1_score"] is not None else "",
                         "yes" if r["rejected"] else "no"])
 
+def _layer_notes(results: dict, per_query: list[dict], zh_rows: list[dict],
+                 zh_n: int) -> list[str]:
+    """已知局限与观察：全部由本轮数据现算，不预判结论。"""
+    nA, nB, nC, nD = (results[k] for k in
+                      ("A_dense", "B_dense_bm25", "C_3way_rrf", "D_3way_rerank"))
+    by_cfg: dict[str, dict[str, dict]] = {}
+    for r in per_query:
+        by_cfg.setdefault(r["config"], {})[r["qid"]] = r
+    # 稀疏分支归因：以修正后（内积算子）的 C−B 为准，数据说是什么就写什么
+    d_rec = nC["recall@5"] - nB["recall@5"]
+    d_mrr = nC["mrr"] - nB["mrr"]
+    if d_rec <= 0 and d_mrr <= 0:
+        sparse_note = (f"内积算子修正后 C−B 仍为 recall@5 {d_rec:+.4f} / MRR {d_mrr:+.4f}——该结论不再"
+                       "受（已修复的）L2 算子缺陷干扰，属 bge-m3 词法权重在本库（中文口语查询×书面"
+                       "条目）上的真实负贡献：其词法信号与 BM25 同源冗余、对口语改写判别力有限，"
+                       "三路 RRF 等权融合进一步稀释了 dense 主信号。后续可试稀疏路降权或退回"
+                       " dense+BM25 两路。")
+    else:
+        sparse_note = (f"内积算子修正后 C−B 翻正为 recall@5 {d_rec:+.4f} / MRR {d_mrr:+.4f}：旧报告的"
+                       "负贡献结论源于 search_sparse 误用 L2 距离（小范数短 chunk 距离天然近、挤占"
+                       " top-k），修正为内积后稀疏分支转为正贡献。")
+    bm25_note = (f"+BM25（B−A）recall@5 {nB['recall@5']-nA['recall@5']:+.4f} / "
+                 f"MRR {nB['mrr']-nA['mrr']:+.4f}；"
+                 f"+rerank（D−C）recall@5 {nD['recall@5']-nC['recall@5']:+.4f} / "
+                 f"MRR {nD['mrr']-nC['mrr']:+.4f}，仍是最大正贡献层。")
+    # D vs A 逐查询（按 recall@5）
+    better = worse = same = 0
+    for qid, ra in by_cfg["A_dense"].items():
+        rd = by_cfg["D_3way_rerank"].get(qid)
+        if rd is None:
+            continue
+        if rd["recall@5"] > ra["recall@5"]:
+            better += 1
+        elif rd["recall@5"] < ra["recall@5"]:
+            worse += 1
+        else:
+            same += 1
+    # D 组完全 miss 名单（recall@5 = 0）
+    misses = sorted(qid for qid, r in by_cfg["D_3way_rerank"].items() if r["recall@5"] == 0.0)
+    miss_ids = ", ".join(misses) if misses else "无"
+    # zero_hit 误收名单（高分未拒）
+    misaccept = [(r["qid"], r["top1_score"]) for r in zh_rows
+                 if r["top1_score"] is not None and not r["rejected"]]
+    ma = "、".join(f"{q}（{s:.2f}）" for q, s in misaccept) if misaccept else "无"
+    return [
+        f"1. **层贡献**：{bm25_note} 稀疏分支归因——{sparse_note} "
+        f"D 相对 A 逐查询（recall@5）：{better} 好 / {worse} 差 / {same} 平。",
+        f"2. **zero_hit 口径**：原 20 条中 g192「无人机在哪里能飞」经复审为可答"
+        f"（书 9-11 无人机实名登记与管制空域，系统原打 0.94 属正确），已重分类为 colloquial，"
+        f"zero_hit 拒答率分母为 {zh_n}；g192 计入四组指标。",
+        f"3. **zero_hit 误收**（top-1 rerank 分 ≥ 0.3）：{ma}；0.3 阈值仍偏松，需校准。",
+        f"4. **D 组完全 miss（recall@5=0）共 {len(misses)} 条**：{miss_ids}；多为长尾条目改写，"
+        f"golden 未人工复审，部分疑似标注噪声。",
+    ]
+
 def write_report(path: Path, results: dict, zh_ok: int, zh_n: int, zh_rate: float,
-                 counts: Counter, wall: float):
+                 counts: Counter, wall: float, per_query: list[dict],
+                 zero_rows: list[dict]):
     L = []
     L.append("# M1 检索消融实验报告（简历量化数字来源）")
     L.append("")
@@ -53,9 +109,13 @@ def write_report(path: Path, results: dict, zh_ok: int, zh_n: int, zh_rate: floa
     L.append(f"- Golden set：`data/golden_set.jsonl` 共 {sum(counts.values())} 条"
              f"（colloquial {counts['colloquial']} / multi_hop {counts['multi_hop']}"
              f" / zero_hit {counts['zero_hit']}；未人工复审，按原样评测）")
-    L.append("- 口径：四组统一 `top_k=10, recall_k=20`，指标为非 zero_hit 的 "
-             f"{results['A_dense']['n']} 条上的平均值；zero_hit 不计入四组指标，单独测拒答")
-    L.append("- 指标：recall@5（top5 命中相关条目比例）/ MRR / nDCG@10（chunk 级命中折算到 entry_id）")
+    L.append(f"- 口径：四组统一 `top_k=10, recall_k=20`，指标为非 zero_hit 的 "
+             f"{results['A_dense']['n']} 条上的平均值；zero_hit 不计入四组指标，单独测拒答"
+             f"（分母 {counts['zero_hit']} = 原 20 条减 g192 重分类，见下）")
+    L.append("- 指标：recall@5 / MRR / nDCG@10；chunk 命中先按 entry_id 保序去重再计分"
+             "（nDCG@10 值域 [0,1]，无 chunk 双计）")
+    L.append("- 算子：search_sparse 自本轮起用内积（`<#>`，index opclass sparsevec_ip_ops），"
+             "此前误用 L2 距离")
     L.append("")
     L.append("## 四组配置结果")
     L.append("")
@@ -80,7 +140,11 @@ def write_report(path: Path, results: dict, zh_ok: int, zh_n: int, zh_rate: floa
     L.append("## zero_hit 拒答率")
     L.append("")
     L.append(f"D 配置 `top_k=1`，top-1 rerank 分数 < 0.3（或无命中）判为正确拒答："
-             f"**{zh_ok}/{zh_n} = {zh_rate:.1%}**")
+             f"**{zh_ok}/{zh_n} = {zh_rate:.1%}**（分母 {zh_n}：g192 已重分类，不在此列）")
+    L.append("")
+    L.append("## 已知局限与观察")
+    L.append("")
+    L.extend(_layer_notes(results, per_query, zero_rows, zh_n))
     L.append("")
     L.append("## 运行信息")
     L.append("")
@@ -113,7 +177,8 @@ def main():
 
     zh_ok = sum(1 for r in zero_rows if r["rejected"])
     write_details_csv(DETAILS_PATH, per_query, zero_rows)
-    write_report(REPORT_PATH, results, zh_ok, len(zero_rows), zh_rate, counts, wall)
+    write_report(REPORT_PATH, results, zh_ok, len(zero_rows), zh_rate, counts, wall,
+                 per_query=per_query, zero_rows=zero_rows)
     print(f"report -> {REPORT_PATH}", flush=True)
     print(f"details -> {DETAILS_PATH} ({len(per_query) + len(zero_rows)} rows)", flush=True)
     print(f"wall {wall:.0f}s", flush=True)

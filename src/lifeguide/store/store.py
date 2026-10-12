@@ -72,9 +72,12 @@ class EntryStore:
         if not qsparse:
             return []
         sv = self._sv(qsparse)
+        # bge-m3 词法权重按内积设计；pgvector <#> 为负内积，升序排 = 内积降序 =
+        # 最优在前。score 取负回内积原值，保持"越大越好"口径（L2 会偏袒小范数
+        # 短 chunk，实测与内积 top-20 重叠仅 0-1/20）。
         with self.conn.cursor() as cur:
-            cur.execute("SELECT chunk_id, sparse <-> %s::sparsevec AS score, entry_id "
-                        "FROM chunks WHERE sparse IS NOT NULL ORDER BY sparse <-> %s::sparsevec LIMIT %s",
+            cur.execute("SELECT chunk_id, -(sparse <#> %s::sparsevec) AS score, entry_id "
+                        "FROM chunks WHERE sparse IS NOT NULL ORDER BY sparse <#> %s::sparsevec LIMIT %s",
                         (sv, sv, k))
             return self._hits(cur)
 

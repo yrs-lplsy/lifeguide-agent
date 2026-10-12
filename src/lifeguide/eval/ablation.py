@@ -25,7 +25,9 @@ def run_ablation(pipeline, golden: list[dict],
         for i, item in enumerate(golden, 1):
             if item["qtype"] == "zero_hit":
                 continue
-            retrieved = [h.entry_id for h in pipeline.search(item["query"], eval_cfg).hits]
+            # chunk 级命中保序去重到 entry 级（同一 entry 多 chunk 会重复，挤占 top-k
+            # 窗口且使 nDCG@10 双计超 1）；metrics.py 契约假定输入已去重，勿改 metrics。
+            retrieved = list(dict.fromkeys(h.entry_id for h in pipeline.search(item["query"], eval_cfg).hits))
             relevant = set(item["relevant"])
             r5 = recall_at_k(retrieved, relevant, 5)
             mv = mrr(retrieved, relevant)

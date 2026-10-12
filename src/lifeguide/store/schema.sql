@@ -17,5 +17,6 @@ CREATE TABLE IF NOT EXISTS chunks (
     metadata   JSONB NOT NULL DEFAULT '{}'
 );
 CREATE INDEX IF NOT EXISTS chunks_dense_hnsw ON chunks USING hnsw (dense vector_cosine_ops);
--- pgvector 0.8：ivfflat 不支持 sparsevec opclass，稀疏索引用 hnsw + sparsevec_l2_ops
-CREATE INDEX IF NOT EXISTS chunks_sparse_hnsw ON chunks USING hnsw (sparse sparsevec_l2_ops);
+-- pgvector 0.8：ivfflat 不支持 sparsevec opclass，稀疏索引用 hnsw；
+-- bge-m3 词法权重按内积设计，用 sparsevec_ip_ops（L2 会偏袒小范数短 chunk）
+CREATE INDEX IF NOT EXISTS chunks_sparse_hnsw ON chunks USING hnsw (sparse sparsevec_ip_ops);
