@@ -1,4 +1,6 @@
-# src/lifeguide/eval/ablation.py — 四组消融配置 + 评测运行（Task 14，简历量化数字来源）
+# src/lifeguide/eval/ablation.py — 五组消融配置 + 评测运行（Task 14，简历量化数字来源）
+# E_dense_rerank 补测：四组数据显示两条融合路径（BM25/稀疏）rerank 前均拉低 recall，
+# "dense-only + rerank" 这一潜在最优组合在原四组中缺测，补 E 组定稿管线选型。
 import dataclasses
 from lifeguide.retrieval.pipeline import SearchConfig
 from lifeguide.eval.metrics import recall_at_k, mrr, ndcg_at_k
@@ -8,15 +10,16 @@ CONFIGS = {
     "B_dense_bm25":   SearchConfig(use_bm25=True,  use_sparse=False, use_rerank=False),
     "C_3way_rrf":     SearchConfig(use_bm25=True,  use_sparse=True,  use_rerank=False),
     "D_3way_rerank":  SearchConfig(use_bm25=True,  use_sparse=True,  use_rerank=True),
+    "E_dense_rerank": SearchConfig(use_bm25=False, use_sparse=False, use_rerank=True),
 }
 
 def run_ablation(pipeline, golden: list[dict],
                  per_query: list | None = None) -> dict[str, dict[str, float]]:
-    """对非 zero_hit 查询跑四组配置，返回 {config: {recall@5, mrr, ndcg@10, n}}。
+    """对非 zero_hit 查询跑五组配置，返回 {config: {recall@5, mrr, ndcg@10, n}}。
 
-    统一用 dataclasses.replace(cfg, top_k=10, recall_k=20) 保证四组同口径；
+    统一用 dataclasses.replace(cfg, top_k=10, recall_k=20) 保证五组同口径；
     per_query 若提供，则追加逐查询明细行（dict: config/qid/qtype/recall@5/mrr/ndcg@10），
-    供报告的明细 csv 导出。zero_hit 查询不计入四组指标。
+    供报告的明细 csv 导出。zero_hit 查询不计入五组指标。
     """
     results = {}
     for name, cfg in CONFIGS.items():
