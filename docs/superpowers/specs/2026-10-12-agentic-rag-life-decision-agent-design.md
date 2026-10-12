@@ -71,7 +71,7 @@ Agent 通过 3-5 轮问答建立画像 → 批量检索画像相关主题 → �
 │ 检索层：BM25 + bge-m3(稠密+稀疏) → RRF → bge-reranker │
 │        → 元数据过滤/排序(证据等级/成本收益)             │
 ├──────────────────────────────────────────────────────┤
-│ 存储：Milvus(向量) · PostgreSQL(条目/用户/会话/反馈)    │
+│ 存储：PostgreSQL + pgvector(向量/全文/条目/用户/会话)   │
 │       · Redis(缓存/限流/短期记忆)                       │
 └──────────────────────────────────────────────────────┘
  离线：解析器(34章→687条目) → 三级索引
@@ -116,9 +116,11 @@ Agent 通过 3-5 轮问答建立画像 → 批量检索画像相关主题 → �
 
 | 存储 | 内容 | 用途 |
 |---|---|---|
-| Milvus | bge-m3 稠密向量 + 稀疏向量（每子块） | 语义召回 + 术语加权 |
+| PostgreSQL pgvector | bge-m3 稠密向量（`vector` + HNSW 索引）+ 稀疏向量（`sparsevec`）（每子块） | 语义召回 + 术语加权，与业务数据同库 |
 | PostgreSQL tsvector | 子块全文 BM25（标题/来源字段加权 boost） | 政策名、法条号、数字精确匹配 |
 | PostgreSQL JSONB | 条目原始结构化记录（source of truth） | 回填、溯源、清单勾选状态 |
+
+**选型说明**：向量检索统一到 PostgreSQL（pgvector），不引入独立向量库——语料仅千级 chunk，pgvector 性能余量充足，单机组件数最少、运维最简；检索层做接口抽象，未来语料或流量扩大可平滑切换 Qdrant/Milvus。
 
 ---
 
@@ -246,7 +248,7 @@ Agent 通过 3-5 轮问答建立画像 → 批量检索画像相关主题 → �
 | Embedding/Rerank | bge-m3 / bge-reranker（本地 CPU） | 稠密+稀疏一体、中文强 |
 | Agent 框架 | LangGraph | JD 高频点名（网易有道/京东） |
 | 后端 | FastAPI + Uvicorn | SSE 原生支持、生态 |
-| 向量库 | Milvus standalone | CookHero 同款、JD 关键词；备选 Qdrant（资源紧张时） |
+| 向量检索 | PostgreSQL pgvector | 稠密（vector+HNSW）与稀疏（sparsevec）同库支持；零新增组件、2C4G 主机资源最省；备选 Qdrant（规模扩大时平滑迁移，检索层已抽象接口） |
 | 关系库 | PostgreSQL 16（JSONB + tsvector） | 条目 source of truth + BM25 |
 | 缓存 | Redis 7 | 限流/会话缓存/短期记忆 |
 | 前端 | React 18 + Vite + TS + Tailwind | CookHero 同栈 |
@@ -276,7 +278,7 @@ Agent 通过 3-5 轮问答建立画像 → 批量检索画像相关主题 → �
 | 风险 | 应对 |
 |---|---|
 | 条目格式不规则导致解析失败 | M1 第一周先跑全量解析 + 差异报告；容错置 null；34 章是有限集，一次修完即稳定 |
-| 云主机 2C4G 跑不动 Milvus | 备选 Qdrant（单容器）或 pgvector；架构上检索层抽象接口，切换成本低 |
+| 云主机 2C4G 资源紧张 | 全栈收敛为 PG(+pgvector) + Redis + 前后端四个容器；Embedding/Rerank 用 CPU 量化模式；检索层抽象接口保留切换 Qdrant 的余地 |
 | LLM API 费用/限流 | 备用路由自动切换；游客模式限次；缓存高频 query 结果 |
 | 追问/检索循环拖慢体验 | 硬上限（追问 ≤2、循环 ≤2）+ SSE 实时反馈进度感 |
 | 医疗/法律输出风险 | 引用白名单 + 免责声明 + 高危前置拦截三层兜底 |
