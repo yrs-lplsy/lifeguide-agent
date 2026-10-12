@@ -1642,6 +1642,8 @@ jobs:
 
 ## 交付验收（M1 完成定义）
 
+> **Scope 注记（M1 收口时裁定）**：Goal 行中的「docs 长文」部分推迟至 M2——M1 的索引、golden set 与全部评测数字均基于 book 687 条目（数据自洽）；docs 长文（94 块，如「被裁了之后先做什么」聚合清单）的真正消费者是 M2 自查清单场景的批量主题检索，且其 chunk_id 无 `#` 分隔符，需在 M2 连同索引方案与 entry_id 解析一起设计后再入索引。`data/docs_chunks.jsonl` 产物保留备用。
+
 1. `pytest -v` 全绿（单测不依赖网络/模型/PG）；`pytest -v --integration`（PG 起）全绿
 2. `python scripts/parse_all.py` 输出 `book 条目: 687（期望 687）`
 3. `python scripts/build_index.py` 完成，chunks ≥ 3000
