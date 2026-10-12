@@ -16,6 +16,7 @@
 - 与 spec 的实现层偏差（已确认合理）：BM25 路用 `jieba + rank_bm25` 进程内实现，**不用** PG tsvector（PG 原生全文检索中文按空格切词不可用，zhparser 扩展需额外编译；千级 chunk 进程内 BM25 无性能压力且是标准 BM25 公式）。
 - 元数据中文值**不翻译**：`钱=少`、`收益=大`、`口径=死亡率` 原样入库（前端/检索映射层处理）。
 - 环境变量（`lifeguide/config.py` 统一读取，`.env` 不进 git）：`DATABASE_URL`（默认 `postgresql://lifeguide:lifeguide@localhost:5433/lifeguide`）、`LLM_BASE_URL`、`LLM_API_KEY`、`LLM_MODEL`、`HF_ENDPOINT`（默认 `https://hf-mirror.com`，国内镜像）、`EMBED_CACHE_DIR`（默认 `~/.cache/lifeguide/embed`）。
+- **LLM Key 分界（spec 7.3 BYOK）**：M1 是离线开发阶段，`LLM_API_KEY` 仅为**开发者自己的 Key**（golden set 生成用，Task 13）；面向用户的「自带 Key + Base URL 配置 + AES-GCM 加密存储」属 M2 在线服务范围，M1 不实现。
 - 提交约定：每个任务一次 commit，消息格式 `feat|fix|test|chore(m1): <描述>`；主分支直接提交（单人项目，M2 起再引 worktree 流程）。
 - 集成测试标记 `@pytest.mark.integration`（需 Docker PG 起着），单测默认不依赖 PG/模型/网络。
 
