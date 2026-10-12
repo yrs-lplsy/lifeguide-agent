@@ -27,6 +27,14 @@ def test_sort_by_value_orders_evidence_benefit_cost():
     ]
     assert [h.chunk_id for h in sort_by_value(hits)] == ["x3", "x2", "x1", "x4"]
 
+def test_sort_by_value_cost_tie_duo_sorts_after_shao():
+    # 对账 entries.jsonl 实际值域: cost money ∈ {0, 少, 多}
+    hits = [
+        _hit("y1", ev="A", ben="中", cost="多"),
+        _hit("y2", ev="A", ben="中", cost="少"),
+    ]
+    assert [h.chunk_id for h in sort_by_value(hits)] == ["y2", "y1"]
+
 def test_filter_evidence_min_b():
     hits = [_hit("a", ev="A"), _hit("b", ev="B"), _hit("c", ev="C")]
     assert [h.chunk_id for h in filter_evidence(hits, "B")] == ["a", "b"]
