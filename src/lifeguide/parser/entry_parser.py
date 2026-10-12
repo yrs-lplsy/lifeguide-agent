@@ -1,7 +1,7 @@
 # src/lifeguide/parser/entry_parser.py
 import re
 from pathlib import Path
-from lifeguide.parser.models import CostTags, Entry, Source
+from lifeguide.parser.models import CostTags, DocChunk, Entry, Source
 
 ENTRY_RE = re.compile(r"^### (\d+)\. (.+)$", re.M)
 TAG_RE = re.compile(r"<!--\s*成本标签:\s*(.+?)\s*-->")
@@ -80,3 +80,28 @@ def parse_book_file(path: Path) -> list[Entry]:
 def _infer_section(stem: str) -> int:
     m = re.match(r"(\d+)", stem)
     return int(m.group(1)) if m else 0
+
+DOC_HEAD_RE = re.compile(r"^## (.+)$", re.M)
+
+def parse_docs_file(path: Path) -> list[DocChunk]:
+    text = path.read_text(encoding="utf-8")
+    rel = f"docs/{path.name}"
+    chunks: list[DocChunk] = []
+    for i, m in enumerate(DOC_HEAD_RE.finditer(text), start=1):
+        start = m.end()
+        nxt = DOC_HEAD_RE.search(text, start)
+        body = text[start: nxt.start() if nxt else len(text)].strip()
+        chunks.append(DocChunk(doc_id=f"docs-{path.stem}-{i}", source_file=rel,
+                               heading=m.group(1).strip(), text=body))
+    return chunks
+
+def parse_all(corpus_dir: Path) -> tuple[list[Entry], list[DocChunk]]:
+    entries: list[Entry] = []
+    for p in sorted((corpus_dir / "book").glob("*.md")):
+        entries.extend(parse_book_file(p))
+    docs: list[DocChunk] = []
+    for p in sorted((corpus_dir / "docs").glob("*.md")):
+        if p.parent.name == "核实记录":
+            continue
+        docs.extend(parse_docs_file(p))
+    return entries, docs

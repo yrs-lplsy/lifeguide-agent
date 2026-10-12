@@ -2,6 +2,7 @@
 from pathlib import Path
 import pytest
 from lifeguide.parser.entry_parser import parse_book_file, parse_cost_tag_line, parse_sources
+from lifeguide.parser.entry_parser import parse_all, parse_docs_file
 
 @pytest.fixture
 def ch19(settings):
@@ -53,3 +54,18 @@ def test_evidence_level_variant_and_missing_fields(tmp_path):
     assert es[0].evidence_level == "A" and "（争议）" in es[0].full_text
     assert es[0].sources[0].url == "https://a.example/c"
     assert es[1].evidence_level is None and es[1].sources == [] and es[1].plain is None
+
+def test_parse_all_reconciles_687(settings):
+    entries, docs = parse_all(settings.corpus_dir)
+    assert len(entries) == 687, f"book 条目数 {len(entries)} != 687"
+    assert all(e.evidence_level in ("A", "B", "C") for e in entries)
+    lv = [e.evidence_level for e in entries]
+    assert lv.count("A") + lv.count("B") + lv.count("C") == 687
+    ids = [e.entry_id for e in entries]
+    assert len(set(ids)) == 687
+    assert len(docs) >= 20  # docs/ 长文按 ## 切块
+
+def test_docs_chunk_ids(settings):
+    chunks = parse_docs_file(settings.corpus_dir / "docs/被裁了之后先做什么.md")
+    assert chunks[0].doc_id == "docs-被裁了之后先做什么-1"
+    assert chunks[0].heading == "当天：签字之前"
