@@ -1,0 +1,196 @@
+{"qid": "g001", "query": "我家宝宝才八个月，每次坐车我都抱着他，觉得这样最安全，可朋友说这样不行，是真的吗？", "relevant": ["1-10"], "qtype": "colloquial", "source_entries": ["1-10"]}
+{"qid": "g002", "query": "孩子三岁了，坐车时我总把他搂在怀里，急刹车的时候差点脱手，有没有什么办法能让他更安全？", "relevant": ["1-10"], "qtype": "colloquial", "source_entries": ["1-10"]}
+{"qid": "g003", "query": "我家厨房那根橡胶管子用了快五年了，看着还没裂，但心里总不踏实，是不是该找人来换一根？大概得花多少钱？", "relevant": ["1-4"], "qtype": "colloquial", "source_entries": ["1-4"]}
+{"qid": "g004", "query": "前两天有人敲门说是燃气公司的，说我家灶具超龄了必须马上换他们带的那个牌子，不然就停气，这种我能直接让他走吗？", "relevant": ["1-4"], "qtype": "colloquial", "source_entries": ["1-4"]}
+{"qid": "g005", "query": "我每天早晚都刷，但牙缝里老塞东西，用牙签弄不干净，是不是该换个别的东西？", "relevant": ["2-10"], "qtype": "colloquial", "source_entries": ["2-10"]}
+{"qid": "g006", "query": "我爸六十多，后槽牙掉了好几颗一直没管，吃饭总用另一边嚼，这样拖着行不行？", "relevant": ["2-10"], "qtype": "colloquial", "source_entries": ["2-10"]}
+{"qid": "g007", "query": "我打算下个月开始少抽点，每天从一包减到半包，慢慢来，这样是不是更容易成功？", "relevant": ["2-4"], "qtype": "colloquial", "source_entries": ["2-4"]}
+{"qid": "g008", "query": "我试过好几次一根一根减少，结果总是拖了半年还在抽，是不是干脆选一天直接不抽更好？", "relevant": ["2-4"], "qtype": "colloquial", "source_entries": ["2-4"]}
+{"qid": "g009", "query": "跟老公吵架，我气得手抖，当时走开去阳台站了十分钟，回来还是想怼他，这算有用吗？", "relevant": ["3-17"], "qtype": "colloquial", "source_entries": ["3-17"]}
+{"qid": "g010", "query": "同事甩锅给我，我忍着没发火但心里堵得慌，晚上翻来覆去睡不着，是不是还不如当场骂他一顿？", "relevant": ["3-17"], "qtype": "colloquial", "source_entries": ["3-17"]}
+{"qid": "g011", "query": "我最近天天加班到晚上十点，一周算下来快70个小时了，可活还是堆着干不完，是不是我再多熬几个小时也没啥用了？", "relevant": ["3-13"], "qtype": "colloquial", "source_entries": ["3-13"]}
+{"qid": "g012", "query": "我们公司最近赶项目，我连续三周每周干60多个小时，结果发现产出跟之前干50小时的时候差不多，我是不是该跟领导说说少加点班？", "relevant": ["3-13"], "qtype": "colloquial", "source_entries": ["3-13"]}
+{"qid": "g013", "query": "我每天下班回家还要花快两个小时洗碗拖地，累得啥都不想干。如果按我每小时挣的钱算，请个钟点工来搞卫生到底划不划算？", "relevant": ["4-14"], "qtype": "colloquial", "source_entries": ["4-14"]}
+{"qid": "g014", "query": "我周末光洗衣服做饭就搭进去大半天，想找个人帮忙又怕花冤枉钱。怎么算才清楚自己动手和花钱请人哪个更值？", "relevant": ["4-14"], "qtype": "colloquial", "source_entries": ["4-14"]}
+{"qid": "g015", "query": "我每次写报告都要拖到截止前一晚，搞得自己特别焦虑，睡也睡不好。有没有那种自己在家跟着练几周就能改善的方法，不一定要去看医生？", "relevant": ["4-13"], "qtype": "colloquial", "source_entries": ["4-13"]}
+{"qid": "g016", "query": "我明知道该复习但就是一直刷手机，拖到考试前才熬夜赶，成绩也掉了。有没有什么不用预约咨询、自己照着做就有效的练习材料？", "relevant": ["4-13"], "qtype": "colloquial", "source_entries": ["4-13"]}
+{"qid": "g017", "query": "我开车不小心撞了人，对方住院花了十几万，保险只赔了一万多，剩下的要我自己出吗？", "relevant": ["5-26"], "qtype": "colloquial", "source_entries": ["5-26"]}
+{"qid": "g018", "query": "听说撞死人最多赔十八万，那要是对方家属要五十万，多出来的钱是不是得卖房？", "relevant": ["5-26"], "qtype": "colloquial", "source_entries": ["5-26"]}
+{"qid": "g019", "query": "我昨天逛商场看到一件外套，标签上写原价两千多，现在打折只要八百，我差点就买了，但回家一想我好像根本不需要它，这种情况怎么判断自己是不是被忽悠了？", "relevant": ["5-24"], "qtype": "colloquial", "source_entries": ["5-24"]}
+{"qid": "g020", "query": "每次双十一我都觉得不买就亏了，结果囤了一堆纸巾和洗衣液，用到过期都用不完，下次再遇到这种活动我该怎么忍住不下单？", "relevant": ["5-24"], "qtype": "colloquial", "source_entries": ["5-24"]}
+{"qid": "g021", "query": "我上次体检做B超，医生说胆囊里有点小石头，但我从来没觉得肚子疼过，这种情况需要马上做手术拿掉吗？", "relevant": ["6-20"], "qtype": "colloquial", "source_entries": ["6-20"]}
+{"qid": "g022", "query": "我查出来有胆结石好几年了，一直没任何不舒服，朋友劝我趁早切了省心，可我又怕手术出问题，到底该不该动这个刀？", "relevant": ["6-20"], "qtype": "colloquial", "source_entries": ["6-20"]}
+{"qid": "g023", "query": "我最近工作特别纠结，要不要辞职换城市，朋友都劝我去找个师傅看看八字，说很准，我该不该花这个钱？", "relevant": ["6-15"], "qtype": "colloquial", "source_entries": ["6-15"]}
+{"qid": "g024", "query": "跟男朋友吵架冷战好几天了，闺蜜让我去算算塔罗看他还爱不爱我，这种到底靠不靠谱啊？", "relevant": ["6-15"], "qtype": "colloquial", "source_entries": ["6-15"]}
+{"qid": "g025", "query": "我在一个没挂营业执照的小饭馆干了两个月，老板一直拖着不给钱，我该找哪个部门要？", "relevant": ["7-22"], "qtype": "colloquial", "source_entries": ["7-22"]}
+{"qid": "g026", "query": "我跟着一个包工头在工地干活，他上面还有大公司，现在包工头跑了，我的工钱该找谁要？", "relevant": ["7-22"], "qtype": "colloquial", "source_entries": ["7-22"]}
+{"qid": "g027", "query": "家里突然着火，东西都烧没了，现在吃饭住宿都成问题，能找谁帮忙解决一下吗？", "relevant": ["7-6"], "qtype": "colloquial", "source_entries": ["7-6"]}
+{"qid": "g028", "query": "我爸突然重病住院，家里钱全花光了，连基本生活都维持不了，这种情况能去街道办申请点应急的钱吗？", "relevant": ["7-6"], "qtype": "colloquial", "source_entries": ["7-6"]}
+{"qid": "g029", "query": "我借给朋友5万块，当时说好一年还，现在都过去4年多了，他一直拖着不还。最近我想去法院告他，但听说拖太久法院就不管了？我手里还有他当年写的借条，这钱还能要回来吗？", "relevant": ["8-19"], "qtype": "colloquial", "source_entries": ["8-19"]}
+{"qid": "g030", "query": "我在上一家公司离职快一年半了，公司还欠我两个月工资没结。当时想着好聚好散没去仲裁，现在还能去申请吗？会不会因为时间太长人家不受理了？", "relevant": ["8-19"], "qtype": "colloquial", "source_entries": ["8-19"]}
+{"qid": "g031", "query": "我在闲鱼买了个手机，卖家发过来是个模型机，我找他退钱他直接把我拉黑了，我该先找闲鱼客服还是直接去派出所报案啊？", "relevant": ["8-22"], "qtype": "colloquial", "source_entries": ["8-22"]}
+{"qid": "g032", "query": "网上买了个二手平板，对方收了钱不发货，总共才1800块，警察说不够立案让我自己协商，我是不是只能认栽了？", "relevant": ["8-22"], "qtype": "colloquial", "source_entries": ["8-22"]}
+{"qid": "g033", "query": "我朋友昨晚喝多了，警察查身份证的时候他甩手想走，结果被按住了，这种一般会怎么处理啊？", "relevant": ["9-17"], "qtype": "colloquial", "source_entries": ["9-17"]}
+{"qid": "g034", "query": "如果被拦下来的时候只是挣了一下没打人，但对方说我动手了，会不会直接算成袭警要坐牢？", "relevant": ["9-17"], "qtype": "colloquial", "source_entries": ["9-17"]}
+{"qid": "g035", "query": "周末跟几个亲戚在家打五块钱的斗地主，赢的钱就买点水果大家一起吃，这样会不会被警察找上门？", "relevant": ["9-13"], "qtype": "colloquial", "source_entries": ["9-13"]}
+{"qid": "g036", "query": "我朋友总叫我去他开的棋牌室打牌，每局他都要从赢家那里抽十块钱，我光去打牌不抽钱，会不会也有事？", "relevant": ["9-13"], "qtype": "colloquial", "source_entries": ["9-13"]}
+{"qid": "g037", "query": "我和对象总是为同一件事吵，吵完就谁也不理谁，这样耗了快一年了，是不是该找个咨询师一起聊聊？", "relevant": ["10-20"], "qtype": "colloquial", "source_entries": ["10-20"]}
+{"qid": "g038", "query": "我们俩现在一说话就呛，干脆冷战好几天，朋友说可以一起去看心理医生，这真的有用吗？", "relevant": ["10-20"], "qtype": "colloquial", "source_entries": ["10-20"]}
+{"qid": "g039", "query": "我和对象之前隔着两千公里，每天视频反而挺甜的，上个月终于搬到一起住了，结果才两周就天天为谁洗碗、几点睡觉吵架，是不是我们其实不合适？", "relevant": ["10-6"], "qtype": "colloquial", "source_entries": ["10-6"]}
+{"qid": "g040", "query": "跟男票熬了三年周末才能见面，好不容易攒够钱租了个一居室，现在住一块儿不到俩月，我看他哪哪都不顺眼，这正常吗还是该趁早分？", "relevant": ["10-6"], "qtype": "colloquial", "source_entries": ["10-6"]}
+{"qid": "g041", "query": "我开发了个小游戏App，用户注册时只让填手机号和昵称，但有个12岁的小孩偷偷用他奶奶的身份证注册了，现在他家长找来说我们没经过同意收集了小孩信息，这种情况我们会被怎么处理？", "relevant": ["11-15"], "qtype": "colloquial", "source_entries": ["11-15"]}
+{"qid": "g042", "query": "我们公司App最近被通报了，说隐私政策没写清楚收集信息的目的，还要求必须授权定位才能用基础功能，老板让我赶紧改，如果不改或者改得不到位，公司和我这个做产品的会面临什么处罚？", "relevant": ["11-15"], "qtype": "colloquial", "source_entries": ["11-15"]}
+{"qid": "g043", "query": "我把一个开源库改吧改吧放进了自己卖钱的小工具里，结果原作者找上门说要我赔他损失，还说要按我赚的钱算，这合理吗？", "relevant": ["11-14"], "qtype": "colloquial", "source_entries": ["11-14"]}
+{"qid": "g044", "query": "我们公司招了个从竞争对手那跳槽来的程序员，他写的代码跟老东家的产品特别像，老板说对方软件是开源的所以我们不怕，真的没事吗？", "relevant": ["11-14"], "qtype": "colloquial", "source_entries": ["11-14"]}
+{"qid": "g045", "query": "老板答应下个月给我涨工资，但一直没签任何东西，现在又反悔了，我该怎么办？", "relevant": ["12-17"], "qtype": "colloquial", "source_entries": ["12-17"]}
+{"qid": "g046", "query": "我用自己的钱帮公司垫了采购费，老板说回头报销但没写借条，现在不认账了，我能要回来吗？", "relevant": ["12-17"], "qtype": "colloquial", "source_entries": ["12-17"]}
+{"qid": "g047", "query": "我开个小店，每季度营业额就二十几万，听说有个政策能免掉一部分税，具体怎么算？我该注意什么？", "relevant": ["12-13"], "qtype": "colloquial", "source_entries": ["12-13"]}
+{"qid": "g048", "query": "朋友说可以帮我多开点票来充成本，这样能少交税，但我有点怕出事，这种操作到底会有什么后果？", "relevant": ["12-13"], "qtype": "colloquial", "source_entries": ["12-13"]}
+{"qid": "g049", "query": "我爷爷这两个月突然走路摇摇晃晃的，还老犯困，问他他说没摔过，但我想起来好像前阵子他撞过门框，这要不要去医院看看啊？", "relevant": ["13-10"], "qtype": "colloquial", "source_entries": ["13-10"]}
+{"qid": "g050", "query": "家里老人最近一只手使不上劲，人也糊涂了不少，之前一直好好的，是不是年纪大了就这样？要不要拍个片子查查？", "relevant": ["13-10"], "qtype": "colloquial", "source_entries": ["13-10"]}
+{"qid": "g051", "query": "我妈今天早上突然说眼前的东西都在转，扶着墙都站不住，还老觉得一个东西看成两个，这是不是得赶紧去医院啊？", "relevant": ["13-4"], "qtype": "colloquial", "source_entries": ["13-4"]}
+{"qid": "g052", "query": "我爸刚才手指想点自己鼻子，试了好几次都戳到脸上，还说一只眼睛突然发黑，过一会儿又好了，要不要叫救护车？", "relevant": ["13-4"], "qtype": "colloquial", "source_entries": ["13-4"]}
+{"qid": "g053", "query": "我去年用一个APP买过东西，现在不用了，想把账号注销掉，但客服说注销了里面的订单记录和地址还会留着，这正常吗？我该怎么做才能让他们把我的那些信息也清掉？", "relevant": ["14-8"], "qtype": "colloquial", "source_entries": ["14-8"]}
+{"qid": "g054", "query": "我之前同意一家健身房收集我的身份证和手机号，现在卡到期不续了，让他们把我的资料删掉，他们不理我，还说删不了。我能去法院告他们吗？", "relevant": ["14-8"], "qtype": "colloquial", "source_entries": ["14-8"]}
+{"qid": "g055", "query": "我昨天在商场把手机弄丢了，现在特别慌，应该先打电话给谁啊？是先报警还是先找运营商？", "relevant": ["14-4"], "qtype": "colloquial", "source_entries": ["14-4"]}
+{"qid": "g056", "query": "我手机被偷了，身上没别的手机，能借朋友的电话先做什么？怎么防止别人用我号码收验证码？", "relevant": ["14-4"], "qtype": "colloquial", "source_entries": ["14-4"]}
+{"qid": "g057", "query": "我户口在城里，退休后想去农村租个院子住十几年，跟房东签合同要注意啥？", "relevant": ["15-9"], "qtype": "colloquial", "source_entries": ["15-9"]}
+{"qid": "g058", "query": "老家村里有人要卖他家的老房子给我，说签个协议按手印就成，这能买吗？", "relevant": ["15-9"], "qtype": "colloquial", "source_entries": ["15-9"]}
+{"qid": "g059", "query": "我看中一套二手房，准备交定金签合同了，怎么确认这套房子现在有没有被法院封了或者押给银行了？", "relevant": ["15-14"], "qtype": "colloquial", "source_entries": ["15-14"]}
+{"qid": "g060", "query": "我签了购房合同、也付了首付，但还没到过户时间，听说要先去登记中心做个什么备案，这样卖家就不能偷偷再卖给别人，具体该怎么办？", "relevant": ["15-14"], "qtype": "colloquial", "source_entries": ["15-14"]}
+{"qid": "g061", "query": "我查出早期乳腺癌，医生让我先做化疗再手术，但我妈非让我喝一种山里的草药，说喝了就不用去医院遭罪了，我该怎么跟她说？", "relevant": ["16-4"], "qtype": "colloquial", "source_entries": ["16-4"]}
+{"qid": "g062", "query": "我老公做完肾移植后一直在吃抗排异药，最近朋友推荐了一种进口鱼油胶囊说能增强免疫力，他偷偷加着吃，我担心会不会跟医院开的药冲突？", "relevant": ["16-4"], "qtype": "colloquial", "source_entries": ["16-4"]}
+{"qid": "g063", "query": "我刚查出来血糖高，眼睛现在看东西没啥问题，还需要专门去医院散瞳看一次吗？", "relevant": ["16-7"], "qtype": "colloquial", "source_entries": ["16-7"]}
+{"qid": "g064", "query": "脚上没破没疼，就是有时候有点麻，需要每年都去医院让医生看看脚吗？", "relevant": ["16-7"], "qtype": "colloquial", "source_entries": ["16-7"]}
+{"qid": "g065", "query": "我奶奶摔了胯骨躺在床上等手术，屁股尾骨那儿有一块红印子按下去不褪色，是不是得赶紧叫护士来看看？", "relevant": ["17-8"], "qtype": "colloquial", "source_entries": ["17-8"]}
+{"qid": "g066", "query": "家里老人瘫在床上大半年了，我每天给他翻几次身，但脚后跟和肩膀还是压得发红，是不是得换个能自己充气放气的床垫？", "relevant": ["17-8"], "qtype": "colloquial", "source_entries": ["17-8"]}
+{"qid": "g067", "query": "我妈在菜市场被人拉着听保健品讲座，人家一直夸她气色好、说今天买有优惠，她差点就掏钱了，我怎么教她当场找个理由先走开？", "relevant": ["17-4"], "qtype": "colloquial", "source_entries": ["17-4"]}
+{"qid": "g068", "query": "我爸去银行取钱，有个小伙子特别热情地推荐一个高利息的理财，说今天不办就没了，我爸不好意思拒绝，我该怎么让他先脱身回来问我？", "relevant": ["17-4"], "qtype": "colloquial", "source_entries": ["17-4"]}
+{"qid": "g069", "query": "我和老婆刚结婚，打算明年要小孩，但一想到以后谁半夜起来哄、谁请假带孩子就头疼，这种事是不是得提前说清楚？", "relevant": ["18-4"], "qtype": "colloquial", "source_entries": ["18-4"]}
+{"qid": "g070", "query": "我老公总觉得他在外面赚钱更累，我在家带娃就是歇着，可我一天到晚连上厕所都得抱着孩子，这种账到底该怎么跟他算？", "relevant": ["18-4"], "qtype": "colloquial", "source_entries": ["18-4"]}
+{"qid": "g071", "query": "我老婆下个月就要生了，公司说只给她放三个月假，这合法吗？她产前想提前两周开始休息，行不行？", "relevant": ["18-2"], "qtype": "colloquial", "source_entries": ["18-2"]}
+{"qid": "g072", "query": "我在小公司上班，老板没给我交生育险，那我生完孩子休的那几个月，工资该找谁要？", "relevant": ["18-2"], "qtype": "colloquial", "source_entries": ["18-2"]}
+{"qid": "g073", "query": "我表哥在厂里出事走了，家里有老婆和两个小孩，还有他爸妈，现在厂里只提了一笔一次性的钱，这合理吗？我们该要哪几份？", "relevant": ["19-15"], "qtype": "colloquial", "source_entries": ["19-15"]}
+{"qid": "g074", "query": "邻居家老公工伤没了，单位说给一笔钱就完事，可他老婆没工作、孩子还在上学，老人也要养，这种情况到底能按月领什么钱？", "relevant": ["19-15"], "qtype": "colloquial", "source_entries": ["19-15"]}
+{"qid": "g075", "query": "我哥在工地上被钢管砸到腿，现在出院在家养了三个月，走路还是瘸的。老板说私了给三万块让他签个字，我们该不该先答应下来？", "relevant": ["19-14"], "qtype": "colloquial", "source_entries": ["19-14"]}
+{"qid": "g076", "query": "我在厂里手指被机器压伤，接回去之后弯不了，医生说以后就这样了。公司让我先签个协议说赔两万，后面还能再去做那个等级认定吗？", "relevant": ["19-14"], "qtype": "colloquial", "source_entries": ["19-14"]}
+{"qid": "g077", "query": "我家宝宝一直哭，怎么哄都停不下来，我整个人都快崩溃了，能不能用力晃他几下让他安静？", "relevant": ["20-9"], "qtype": "colloquial", "source_entries": ["20-9"]}
+{"qid": "g078", "query": "半夜孩子又闹又哭，我累得不行，火气上来了，抱着他使劲抖了几下，会不会把他弄伤啊？", "relevant": ["20-9"], "qtype": "colloquial", "source_entries": ["20-9"]}
+{"qid": "g079", "query": "我家宝宝刚出生十几个小时，脸上就看着有点发黄了，是不是得赶紧抱去医院看看啊？", "relevant": ["20-13"], "qtype": "colloquial", "source_entries": ["20-13"]}
+{"qid": "g080", "query": "娃出生四五天了，黄疸不但没退反而越来越重，整天迷迷糊糊叫不醒，奶也不肯吃，大便颜色还发白，这种情况要不要马上去医院？", "relevant": ["20-13"], "qtype": "colloquial", "source_entries": ["20-13"]}
+{"qid": "g081", "query": "我下个月去泰国租车，网上花两百块办了本小册子，说是能当翻译件用，结果朋友说泰国不认这个，是真的吗？我到底该拿什么去租车？", "relevant": ["21-8"], "qtype": "colloquial", "source_entries": ["21-8"]}
+{"qid": "g082", "query": "打算暑假带家人去新西兰自驾，我只有国内驾照，没办过什么翻译公证，直接拿原件去租车行能提车吗？会不会被警察拦下来算无证驾驶？", "relevant": ["21-8"], "qtype": "colloquial", "source_entries": ["21-8"]}
+{"qid": "g083", "query": "我下个月去泰国玩，旅行社让我买个旅行险，我看有个便宜的就保航班晚点，这个够用吗？万一我在那边骑摩托摔了要住院，那个能管吗？", "relevant": ["21-4"], "qtype": "colloquial", "source_entries": ["21-4"]}
+{"qid": "g084", "query": "我爸妈要去欧洲探亲，年纪大了我怕他们突然生病，听说在国外叫个救护车或者送回国特别贵，我该给他们买啥样的保险才能 cover 这些啊？", "relevant": ["21-4"], "qtype": "colloquial", "source_entries": ["21-4"]}
+{"qid": "g085", "query": "跟人吵完架心跳得厉害，坐在工位上半天静不下来，有没有什么不用花钱、几分钟就能让自己平复的小办法？", "relevant": ["22-8"], "qtype": "colloquial", "source_entries": ["22-8"]}
+{"qid": "g086", "query": "最近总是莫名烦躁，晚上躺床上脑子停不下来，听说有个每天只要几分钟的练习坚持一阵子比冥想还管用，具体是怎么做的？", "relevant": ["22-8"], "qtype": "colloquial", "source_entries": ["22-8"]}
+{"qid": "g087", "query": "在酒吧玩的时候，有个刚认识的人递给我一支电子烟让我尝尝，说就是普通水果味的，我该不该接？", "relevant": ["22-4"], "qtype": "colloquial", "source_entries": ["22-4"]}
+{"qid": "g088", "query": "我去KTV唱歌，中途上了个厕所回来，发现我那杯饮料好像被人动过，还能不能接着喝？", "relevant": ["22-4"], "qtype": "colloquial", "source_entries": ["22-4"]}
+{"qid": "g089", "query": "我孩子上三年级，最近做数学作业总是把加法当减法算，同一页题连着做十道都对，换个题型就懵，是不是该把加减乘除混在一起让他做？", "relevant": ["23-17"], "qtype": "colloquial", "source_entries": ["23-17"]}
+{"qid": "g090", "query": "我在准备考研，背英语单词时一个单元反复背五遍感觉记住了，但做阅读还是反应不过来，要不要把单词和长难句、阅读题穿插着一起练？", "relevant": ["23-17"], "qtype": "colloquial", "source_entries": ["23-17"]}
+{"qid": "g091", "query": "我每次复习就是拿荧光笔把书涂得花花绿绿，然后一遍遍念，可合上书脑子还是空的，是不是我方法有问题？", "relevant": ["23-16"], "qtype": "colloquial", "source_entries": ["23-16"]}
+{"qid": "g092", "query": "我花一晚上把一章内容缩成几行笔记，还画了思维导图，但做题时还是想不起来，到底哪里不对？", "relevant": ["23-16"], "qtype": "colloquial", "source_entries": ["23-16"]}
+{"qid": "g093", "query": "我手机和钱包都丢在出租车上了，现在人躺在医院急诊门口，疼得厉害，他们会不会因为我说不出自己是谁、也交不上押金就不管我？", "relevant": ["24-8"], "qtype": "colloquial", "source_entries": ["24-8"]}
+{"qid": "g094", "query": "我爸在工地上突然晕倒，工友打120送医院，可我们身上一分钱没带，医保卡也在老家，医院会不会先让交钱才给抢救？", "relevant": ["24-8"], "qtype": "colloquial", "source_entries": ["24-8"]}
+{"qid": "g095", "query": "我妈住院输液后突然发高烧，我怀疑是那瓶药水有问题，现在想跟医院一起把剩下的药和输液管都留起来当证据，具体该怎么弄？", "relevant": ["24-6"], "qtype": "colloquial", "source_entries": ["24-6"]}
+{"qid": "g096", "query": "我做完手术觉得不对劲，想把病历复印一份自己拿着，但医院说还没写完，我能先把已经写好的部分要过来吗？需要他们签字吗？", "relevant": ["24-6"], "qtype": "colloquial", "source_entries": ["24-6"]}
+{"qid": "g097", "query": "我父亲刚过世，想找个人帮忙跑腿买寿衣、联系火化，这种私人中介在县里需要办什么手续才算正规吗？", "relevant": ["25-8"], "qtype": "colloquial", "source_entries": ["25-8"]}
+{"qid": "g098", "query": "我们镇上有人专门帮人代买骨灰盒、主持告别仪式，他说不用登记，我该打哪个电话问一下他到底合不合规？", "relevant": ["25-8"], "qtype": "colloquial", "source_entries": ["25-8"]}
+{"qid": "g099", "query": "家里人刚在医院走了，我们觉得走得不明不白，现在该赶紧做哪些事才能保住证据？", "relevant": ["25-4"], "qtype": "colloquial", "source_entries": ["25-4"]}
+{"qid": "g100", "query": "如果对亲人的死亡原因有怀疑，但家属意见不统一，拖着不处理会有什么后果？", "relevant": ["25-4"], "qtype": "colloquial", "source_entries": ["25-4"]}
+{"qid": "g101", "query": "我家孩子今年14岁，偷偷拿我手机给一个主播刷了三千多块钱的礼物，我找平台退钱，平台说是我自己没管好手机，这钱还能要回来吗？", "relevant": ["26-8"], "qtype": "colloquial", "source_entries": ["26-8"]}
+{"qid": "g102", "query": "我女儿刚上初一，13岁，她说想用我的身份证注册个账号自己开直播玩，平台会不会发现她年龄不够就不让开？要是她拿我信息去开了，后面会有什么麻烦？", "relevant": ["26-8"], "qtype": "colloquial", "source_entries": ["26-8"]}
+{"qid": "g103", "query": "我自己搭了个小网站，租了台国内的云主机，是不是得先办个什么手续才能上线？", "relevant": ["26-4"], "qtype": "colloquial", "source_entries": ["26-4"]}
+{"qid": "g104", "query": "网站放在国内机房，没办那个手续就开了，会有什么后果？", "relevant": ["26-4"], "qtype": "colloquial", "source_entries": ["26-4"]}
+{"qid": "g105", "query": "我老婆刚才突然下面流了好多水，现在站着会不会有事？要不要先洗个澡再去医院？", "relevant": ["27-8"], "qtype": "colloquial", "source_entries": ["27-8"]}
+{"qid": "g106", "query": "怀孕九个月，刚才内裤一下子湿透了，我还能自己下楼打车去医院吗？", "relevant": ["27-8"], "qtype": "colloquial", "source_entries": ["27-8"]}
+{"qid": "g107", "query": "我老婆没上班，下个月就要生了，听说能用我的社保卡报销生孩子的费用，具体该怎么弄啊？", "relevant": ["27-11"], "qtype": "colloquial", "source_entries": ["27-11"]}
+{"qid": "g108", "query": "我在公司一直交着社保，但刚换工作才三个月，老婆马上要生了，产检和住院的钱还能不能报？需要提前办什么手续吗？", "relevant": ["27-11"], "qtype": "colloquial", "source_entries": ["27-11"]}
+{"qid": "g109", "query": "我朋友圈微商卖的减肥咖啡，说一周能掉五斤，我喝了几天确实不想吃饭，但心跳特别快，晚上睡不着，这东西是不是有问题啊？", "relevant": ["28-4"], "qtype": "colloquial", "source_entries": ["28-4"]}
+{"qid": "g110", "query": "我生完孩子胖了二十斤，看网上那种酵素梅说吃了就拉，能瘦肚子，我吃了两盒，结果拉得腿软，还老觉得心慌，要不要去医院看看？", "relevant": ["28-4"], "qtype": "colloquial", "source_entries": ["28-4"]}
+{"qid": "g111", "query": "我姐妹在网上买的那种小药片，说吃了胸会变大，我也想跟着吃，但没人带我去抽血检查，这样搞会不会出事啊？", "relevant": ["28-7"], "qtype": "colloquial", "source_entries": ["28-7"]}
+{"qid": "g112", "query": "我吃了几个月那种药，感觉效果不够就自己多吃了半片，最近小腿又肿又疼，是不是得去医院看看？", "relevant": ["28-7"], "qtype": "colloquial", "source_entries": ["28-7"]}
+{"qid": "g113", "query": "我妈妈走了快八个月了，我还是每天吃不下东西，上班也集中不了精神，是不是该去医院看看？", "relevant": ["29-8"], "qtype": "colloquial", "source_entries": ["29-8"]}
+{"qid": "g114", "query": "亲人去世大半年了，我一直缓不过来，连孩子都没心思照顾，去普通心理咨询有用吗？", "relevant": ["29-8"], "qtype": "colloquial", "source_entries": ["29-8"]}
+{"qid": "g115", "query": "爷爷走了，我该不该让六岁的女儿知道？还是跟她说爷爷去外地了，把她先送到我姐家住一阵子？", "relevant": ["29-7"], "qtype": "colloquial", "source_entries": ["29-7"]}
+{"qid": "g116", "query": "孩子他爸上个月出车祸没了，葬礼上我要不要带八岁的儿子去？我妈说让孩子去我弟那边待半年换个环境，这样好不好？", "relevant": ["29-7"], "qtype": "colloquial", "source_entries": ["29-7"]}
+{"qid": "g117", "query": "我家娃每天放学回家就抱着手机不撒手，但作业也能写完，觉也睡够，周末还跟同学出去打球，这样算不算有问题啊？", "relevant": ["30-14"], "qtype": "colloquial", "source_entries": ["30-14"]}
+{"qid": "g118", "query": "孩子最近老熬夜玩游戏，白天上课打瞌睡，叫他出门也不去，我该不该直接把手机没收了？", "relevant": ["30-14"], "qtype": "colloquial", "source_entries": ["30-14"]}
+{"qid": "g119", "query": "我家孩子刚上小学，后面的大牙已经全长出来了，学校体检说可以给牙面上涂一层东西防蛀牙，这到底管不管用啊？", "relevant": ["30-13"], "qtype": "colloquial", "source_entries": ["30-13"]}
+{"qid": "g120", "query": "我儿子六龄齿刚冒出来，牙医建议把牙面上那些深沟填上，说能少长虫牙，可我听说做完过几年还会坏，是真的吗？", "relevant": ["30-13"], "qtype": "colloquial", "source_entries": ["30-13"]}
+{"qid": "g121", "query": "我在乡镇小学教了三年书，今年考核过了，想继续待下去，但听说转正手续一直没动静，这正常吗？", "relevant": ["31-8"], "qtype": "colloquial", "source_entries": ["31-8"]}
+{"qid": "g122", "query": "我朋友本科师范毕业，考了教师资格证，在村里学校干了三年，现在想留在那儿，是不是该直接给正式编制了？", "relevant": ["31-8"], "qtype": "colloquial", "source_entries": ["31-8"]}
+{"qid": "g123", "query": "我今年32岁，在工厂干了十年，只有初中学历，现在想报个能拿大专文凭的渠道，是不是必须得先回去读高中啊？", "relevant": ["31-10"], "qtype": "colloquial", "source_entries": ["31-10"]}
+{"qid": "g124", "query": "我中专毕业快五年了，现在送外卖，想边跑单边考个本科，有没有那种不要求我每天去学校上课、也不卡我原来成绩的报名方式？", "relevant": ["31-10"], "qtype": "colloquial", "source_entries": ["31-10"]}
+{"qid": "g125", "query": "我打算去英国读一年硕士，除了办签证要交的钱，还有没有别的必须提前一次性交的費用？大概要准备多少？", "relevant": ["32-8"], "qtype": "colloquial", "source_entries": ["32-8"]}
+{"qid": "g126", "query": "如果我去英国留学两年，出发前一共要交哪些跟签证和医疗相关的钱？能不能分期付？", "relevant": ["32-8"], "qtype": "colloquial", "source_entries": ["32-8"]}
+{"qid": "g127", "query": "我这学期办了休学，签证还有一年才到期，现在去便利店兼职会被查吗？", "relevant": ["32-4"], "qtype": "colloquial", "source_entries": ["32-4"]}
+{"qid": "g128", "query": "我刚退学准备重新申请学校，中间这几个月能不能先打点零工赚生活费？", "relevant": ["32-4"], "qtype": "colloquial", "source_entries": ["32-4"]}
+{"qid": "g129", "query": "我腿脚不方便，面试的时候老板说岗位需要经常跑外勤，直接把我刷了，后来我才知道那个岗位其实一直坐办公室。这种情况我去劳动局投诉有用吗？要是打官司，律师费是不是得自己掏？", "relevant": ["33-20"], "qtype": "colloquial", "source_entries": ["33-20"]}
+{"qid": "g130", "query": "我在公司干了一年多，一直不给转正，工资也比同岗位的同事少一截，领导私下说是因为我耳朵戴助听器。我想去告他们，但听说请律师很贵，能不能先找免费的法律援助再决定要不要上法院？", "relevant": ["33-20"], "qtype": "colloquial", "source_entries": ["33-20"]}
+{"qid": "g131", "query": "我奶奶腿脚不好，看到个广告说贴他们的膏药三个疗程就能自己走路，这种能信吗？", "relevant": ["33-6"], "qtype": "colloquial", "source_entries": ["33-6"]}
+{"qid": "g132", "query": "网上卖的那种按摩仪说用一个月就能让听不见的人恢复听力，还放了好多用户说好了的视频，这是不是骗人的？", "relevant": ["33-6"], "qtype": "colloquial", "source_entries": ["33-6"]}
+{"qid": "g133", "query": "我家宝宝一岁半，今天拉稀拉了五六次，小脸都蔫了，我该给他喝点什么补一补？", "relevant": ["34-8"], "qtype": "colloquial", "source_entries": ["34-8"]}
+{"qid": "g134", "query": "我昨天吃坏肚子一直跑厕所，家里有蒙脱石散和那种冲剂，能不能直接吃止泻的？", "relevant": ["34-8"], "qtype": "colloquial", "source_entries": ["34-8"]}
+{"qid": "g135", "query": "我家宝宝才一岁多，这两天流鼻涕咳嗽，我翻出之前大宝吃剩的小儿氨酚黄那敏颗粒，能给他冲半包喝吗？", "relevant": ["34-4"], "qtype": "colloquial", "source_entries": ["34-4"]}
+{"qid": "g136", "query": "孩子刚满一岁，晚上咳得睡不好，家里有瓶止咳糖浆，说明书上没写这么小的能不能喝，我能不能少喂一点让他舒服些？", "relevant": ["34-4"], "qtype": "colloquial", "source_entries": ["34-4"]}
+{"qid": "g137", "query": "公司上周通知我下个月走人，我干了3年7个月，平时工资加奖金平均下来一个月大概1万2，那他们应该赔我多少个月的钱啊？", "relevant": ["19-4", "7-2"], "qtype": "multi_hop", "source_entries": ["19-4", "7-2"]}
+{"qid": "g138", "query": "我在现在这家公司干了快5年，但中间有半年是试用期，走的时候人事说只按4年算，这样对吗？我该怎么跟他们掰扯？", "relevant": ["19-4", "7-2"], "qtype": "multi_hop", "source_entries": ["19-4", "7-2"]}
+{"qid": "g139", "query": "我血压降下来以后就把药停了，最近头又有点晕，是不是跟这个有关系？", "relevant": ["16-1", "24-1"], "qtype": "multi_hop", "source_entries": ["16-1", "24-1"]}
+{"qid": "g140", "query": "医生开的抗生素我吃了三天感觉嗓子不疼了，剩下那几天还用接着吃完吗？", "relevant": ["16-1", "24-1"], "qtype": "multi_hop", "source_entries": ["16-1", "24-1"]}
+{"qid": "g141", "query": "每次都是我找话题、我定餐厅，他回消息倒是挺快，但从来不说下次什么时候见，这算什么意思？", "relevant": ["10-3", "8-19"], "qtype": "multi_hop", "source_entries": ["10-3", "8-19"]}
+{"qid": "g142", "query": "跟她聊得挺开心的，但我不发消息她就不发，约她出来她也答应，就是从来不主动提见面，我还要继续吗？", "relevant": ["10-3", "8-19"], "qtype": "multi_hop", "source_entries": ["10-3", "8-19"]}
+{"qid": "g143", "query": "我爸突然倒在地上叫不醒，胸口也没动静了，我该怎么做？", "relevant": ["13-1", "1-3"], "qtype": "multi_hop", "source_entries": ["13-1", "1-3"]}
+{"qid": "g144", "query": "家里老人晕过去没气了，我一个人在旁边，先打电话还是先做别的？", "relevant": ["13-1", "1-3"], "qtype": "multi_hop", "source_entries": ["13-1", "1-3"]}
+{"qid": "g145", "query": "房东突然把我家门锁换了，还停水停电，我进不去也住不了，这种情况我该先做什么？", "relevant": ["15-2", "9-2"], "qtype": "multi_hop", "source_entries": ["15-2", "9-2"]}
+{"qid": "g146", "query": "房东带人上门威胁让我赶紧搬走，说不搬就天天来闹，我该怎么保护自己？", "relevant": ["15-2", "9-2"], "qtype": "multi_hop", "source_entries": ["15-2", "9-2"]}
+{"qid": "g147", "query": "我和老公打算下个月开始要孩子，听说得提前吃那种小药片，具体该从什么时候开始吃、吃到什么时候停啊？", "relevant": ["27-1", "20-1"], "qtype": "multi_hop", "source_entries": ["27-1", "20-1"]}
+{"qid": "g148", "query": "我上一胎查出胎儿脊柱裂，后来没保住，现在想再试一次，是不是得提前吃点什么来降低风险？", "relevant": ["27-1", "20-1"], "qtype": "multi_hop", "source_entries": ["27-1", "20-1"]}
+{"qid": "g149", "query": "我家孩子昨天在游戏里加了个说送皮肤的人，对方让他拿我手机扫个码，他差点就照做了。我该怎么跟他说才能让他以后遇到这种事直接拒绝？", "relevant": ["5-10", "12-1"], "qtype": "multi_hop", "source_entries": ["5-10", "12-1"]}
+{"qid": "g150", "query": "我儿子上周接到一个电话，对方说是他同学家长，让他把我手机收到的六位数念过去，他真念了。我现在该怎么跟他讲，才能让他下次碰到这种事马上告诉我？", "relevant": ["5-10", "12-1"], "qtype": "multi_hop", "source_entries": ["5-10", "12-1"]}
+{"qid": "g151", "query": "我朋友让我帮他写个程序，在购物网站上自动点购买按钮，比人快一点，说只是自己用不卖，这样也会被抓吗？", "relevant": ["11-3", "14-1"], "qtype": "multi_hop", "source_entries": ["11-3", "14-1"]}
+{"qid": "g152", "query": "我在网上看到有人卖那种自动抢演唱会门票的小工具，买来自己用或者转手卖给别人，会有什么后果？", "relevant": ["11-3", "14-1"], "qtype": "multi_hop", "source_entries": ["11-3", "14-1"]}
+{"qid": "g153", "query": "我手写了一份财产分配，签了名但只写了月份没写具体日子，这样算数吗？", "relevant": ["17-2", "29-1"], "qtype": "multi_hop", "source_entries": ["17-2", "29-1"]}
+{"qid": "g154", "query": "我之前在公证处办过一份，后来自己又写了一份新的，现在两份内容不一样，到底按哪个来？", "relevant": ["17-2", "29-1"], "qtype": "multi_hop", "source_entries": ["17-2", "29-1"]}
+{"qid": "g155", "query": "我儿子今年刚满18岁，听说要在10月底前上网填个什么东西，不填的话会不会被罚钱啊？", "relevant": ["31-2", "32-1"], "qtype": "multi_hop", "source_entries": ["31-2", "32-1"]}
+{"qid": "g156", "query": "我弟弟去当兵了，他说只干两年就能回来，是真的吗？两年之后必须退伍还是可以接着干？", "relevant": ["31-2", "32-1"], "qtype": "multi_hop", "source_entries": ["31-2", "32-1"]}
+{"qid": "g157", "query": "我哥去年摔伤了脊柱，现在坐轮椅。刚才他突然说头特别疼，满头是汗，衣服领子有点紧，我该先做什么？", "relevant": ["33-1", "7-1"], "qtype": "multi_hop", "source_entries": ["33-1", "7-1"]}
+{"qid": "g158", "query": "家里老人下半身瘫痪，刚才脸通红、一直冒汗说头疼，是不是裤子或尿袋勒太紧了？要不要马上打急救电话？", "relevant": ["33-1", "7-1"], "qtype": "multi_hop", "source_entries": ["33-1", "7-1"]}
+{"qid": "g159", "query": "我家娃半夜烧到39度，家里只有以前大人吃的那种感冒药，上面成分表里有安乃近，能给小孩吃吗？", "relevant": ["34-2", "2-1"], "qtype": "multi_hop", "source_entries": ["34-2", "2-1"]}
+{"qid": "g160", "query": "孩子发烧，我翻药箱看到阿司匹林和尼美舒利，这两种是不是都不能给十几岁以下的娃用啊？", "relevant": ["34-2", "2-1"], "qtype": "multi_hop", "source_entries": ["34-2", "2-1"]}
+{"qid": "g161", "query": "我家娃是2025年3月生的，现在快一岁了，听说政府每年给三千六，这个要去哪儿办啊？", "relevant": ["18-1", "30-2"], "qtype": "multi_hop", "source_entries": ["18-1", "30-2"]}
+{"qid": "g162", "query": "我孩子刚满两岁，户口在老家但我们在外地打工，这笔钱还能领吗？会不会影响我们申请低保？", "relevant": ["18-1", "30-2"], "qtype": "multi_hop", "source_entries": ["18-1", "30-2"]}
+{"qid": "g163", "query": "我朋友在国外被警察带走了，家里人急得不行，听说大使馆能去看他，但能不能直接把他弄出来啊？还有如果他在里面吃住看病花了钱，最后是谁出？", "relevant": ["21-3", "8-10"], "qtype": "multi_hop", "source_entries": ["21-3", "8-10"]}
+{"qid": "g164", "query": "我下个月要出国打工，万一在那边惹上麻烦被关起来，咱们这边驻外的人能帮我交罚款或者保释吗？他们去探望的时候能帮我垫付医药费吗？", "relevant": ["21-3", "8-10"], "qtype": "multi_hop", "source_entries": ["21-3", "8-10"]}
+{"qid": "g165", "query": "我爸妈天天吃那种几十块一瓶的深海鱼油胶囊，说能护心脏，可我看他们吃了两年体检也没啥变化，这钱是不是白花了？", "relevant": ["6-2", "5-1"], "qtype": "multi_hop", "source_entries": ["6-2", "5-1"]}
+{"qid": "g166", "query": "我老公有糖尿病，最近非要买一大罐鱼油回来每天吞，说吃了不容易心梗，我该不该拦着他？", "relevant": ["6-2", "5-1"], "qtype": "multi_hop", "source_entries": ["6-2", "5-1"]}
+{"qid": "g167", "query": "我今晚跟朋友去唱歌，那家店在地下室，走廊里堆了好多纸箱，包间门还只能从里面开，这种地方是不是不太对劲？", "relevant": ["22-1", "3-1"], "qtype": "multi_hop", "source_entries": ["22-1", "3-1"]}
+{"qid": "g168", "query": "周末想去玩个密室，结果发现店家把消防通道的门用铁链锁上了，说怕有人跑单，这样正常吗？", "relevant": ["22-1", "3-1"], "qtype": "multi_hop", "source_entries": ["22-1", "3-1"]}
+{"qid": "g169", "query": "我在小区门口开了个水果团购群，邻居们先把钱转给我，我再统一找果农下单，这样会不会有问题？", "relevant": ["26-1", "12-2"], "qtype": "multi_hop", "source_entries": ["26-1", "12-2"]}
+{"qid": "g170", "query": "我搞了个二手书交易的小程序，买家付的钱先到我卡里，等确认收货了我再打给卖书的人，这种操作合规吗？", "relevant": ["26-1", "12-2"], "qtype": "multi_hop", "source_entries": ["26-1", "12-2"]}
+{"qid": "g171", "query": "我最近为了穿下那条裙子，每天只吃一顿饭，结果现在头发一把一把掉，月经也不来了，我是不是该换个法子？", "relevant": ["28-1", "1-7"], "qtype": "multi_hop", "source_entries": ["28-1", "1-7"]}
+{"qid": "g172", "query": "我闺蜜每次吃完火锅就偷偷去厕所抠嗓子眼吐掉，她说这样不会胖，可我看着她脸色越来越差，怎么劝她改掉这个习惯啊？", "relevant": ["28-1", "1-7"], "qtype": "multi_hop", "source_entries": ["28-1", "1-7"]}
+{"qid": "g173", "query": "我邻居独居，物业撬门发现人已经走了好几天了，这种我们要不要先打110？还是直接联系殡仪馆？", "relevant": ["25-1", "19-8"], "qtype": "multi_hop", "source_entries": ["25-1", "19-8"]}
+{"qid": "g174", "query": "我亲戚在家突然去世，看着像是心脏病发作，但之前没去医院看过，现在殡仪馆说没有那张证明不能火化，我该找谁开啊？", "relevant": ["25-1", "19-8"], "qtype": "multi_hop", "source_entries": ["25-1", "19-8"]}
+{"qid": "g175", "query": "我表弟今年初三刚毕业，还差几个月才到16岁，家里条件不好想让他出去挣点钱，这种年纪能去哪里找活干啊？", "relevant": ["23-1", "4-1"], "qtype": "multi_hop", "source_entries": ["23-1", "4-1"]}
+{"qid": "g176", "query": "我家孩子15岁多，不想上学了，有个小厂说可以让他去上班，但工资给得很低还说不签合同，这种地方去了会不会有麻烦？", "relevant": ["23-1", "4-1"], "qtype": "multi_hop", "source_entries": ["23-1", "4-1"]}
+{"qid": "g177", "query": "怎么写简历找工作", "relevant": [], "qtype": "zero_hit", "source_entries": []}
+{"qid": "g178", "query": "怎么选驾校考驾照", "relevant": [], "qtype": "zero_hit", "source_entries": []}
+{"qid": "g179", "query": "买什么车划算", "relevant": [], "qtype": "zero_hit", "source_entries": []}
+{"qid": "g180", "query": "怎么考公务员怎么准备行测", "relevant": [], "qtype": "zero_hit", "source_entries": []}
+{"qid": "g181", "query": "家里装修什么风格好看", "relevant": [], "qtype": "zero_hit", "source_entries": []}
+{"qid": "g182", "query": "怎么练出马甲线", "relevant": [], "qtype": "zero_hit", "source_entries": []}
+{"qid": "g183", "query": "养猫要注意什么", "relevant": [], "qtype": "zero_hit", "source_entries": []}
+{"qid": "g184", "query": "怎么学英语口语", "relevant": [], "qtype": "zero_hit", "source_entries": []}
+{"qid": "g185", "query": "拍婚纱照选哪家", "relevant": [], "qtype": "zero_hit", "source_entries": []}
+{"qid": "g186", "query": "怎么给孩子起名字", "relevant": [], "qtype": "zero_hit", "source_entries": []}
+{"qid": "g187", "query": "哪个手机牌子好用", "relevant": [], "qtype": "zero_hit", "source_entries": []}
+{"qid": "g188", "query": "冬天暖气不热找谁", "relevant": [], "qtype": "zero_hit", "source_entries": []}
+{"qid": "g189", "query": "怎么注册自媒体账号涨粉", "relevant": [], "qtype": "zero_hit", "source_entries": []}
+{"qid": "g190", "query": "健身房私教课值不值得买", "relevant": [], "qtype": "zero_hit", "source_entries": []}
+{"qid": "g191", "query": "看什么书提升情商", "relevant": [], "qtype": "zero_hit", "source_entries": []}
+{"qid": "g192", "query": "无人机在哪里能飞", "relevant": [], "qtype": "zero_hit", "source_entries": []}
+{"qid": "g193", "query": "怎么办理港澳通行证旅游签注", "relevant": [], "qtype": "zero_hit", "source_entries": []}
+{"qid": "g194", "query": "WiFi 路由器怎么摆放信号好", "relevant": [], "qtype": "zero_hit", "source_entries": []}
+{"qid": "g195", "query": "二手车过户流程", "relevant": [], "qtype": "zero_hit", "source_entries": []}
+{"qid": "g196", "query": "怎么举报噪音扰民", "relevant": [], "qtype": "zero_hit", "source_entries": []}
